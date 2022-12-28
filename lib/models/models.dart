@@ -4,10 +4,12 @@ enum ControlMethodType {
 }
 
 class Command {
+  String id;
   String name;
   String command;
 
   Command(
+    this.id,
     this.name,
     this.command,
   );
@@ -16,7 +18,7 @@ class Command {
 class Device {
   String id;
   String name;
-  int port;
+  Port port;
   List<Command>? commands;
   ControlMethodType controlMethod;
 

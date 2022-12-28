@@ -1,8 +1,14 @@
 import '../models/models.dart';
 
 String controlMethodEnumToName(ControlMethodType type) {
-  if (type == ControlMethodType.tcp) {
-    return "TCP";
+  switch (type) {
+    case ControlMethodType.tcp:
+      {
+        return "TCP";
+      }
+    case ControlMethodType.udp:
+      {
+        return "UDP";
+      }
   }
-  return "UDP";
 }

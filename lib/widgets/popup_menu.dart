@@ -93,10 +93,11 @@ class _PopupMenuState extends State<PopupMenu> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      key: _key,
-      width: 20,
-      height: 20,
+      key: widget.key,
+      width: 40,
+      height: 40,
       child: IconButton(
+        padding: EdgeInsets.zero,
         icon: const Icon(
           Icons.menu_outlined,
           color: Colors.black,
